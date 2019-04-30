@@ -466,9 +466,36 @@ public class flagmaker {
 	public static Flag sAfrika() {
 		Flag flag = new Flag();
 		
+		Rectangle bg = new Rectangle();
+		bg.setWidth(300);
+		bg.setHeight(200);
+		bg.setFill(Color.GREEN);
+		
+		Polygon bt = new Polygon(0, 40, 100, 100, 0, 160);
 		
 		
-		flag.getChildren().addAll();
+		Polygon ys = new Polygon(0, 25, 0, 40, 100, 100, 100, 100, 115, 100, 0, 30);
+		ys.setFill(Color.YELLOW);
+		
+		Polygon ys2 = new Polygon(0, 25, 0, 40, 100, 100, 100, 100, 115, 100, 0, 30);
+		ys2.setFill(Color.YELLOW);
+		ys2.setRotate(180);
+		ys2.setTranslateY(75);
+		ys2.setNodeOrientation(NodeOrientation.RIGHT_TO_LEFT);
+		
+		Polygon ws1 = new Polygon(33, 0, 48, 0, 150, 80, 165, 80, 0, 33);
+		
+		
+		Polygon ws2 = new Polygon();
+		
+		
+		Polygon ws3 = new Polygon();
+		
+		
+		Polygon ws4 = new Polygon();
+		
+		
+		flag.getChildren().addAll(bg, bt, ys, ys2, ws1);
 		
 		return flag;
 	}
