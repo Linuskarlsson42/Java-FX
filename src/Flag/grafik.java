@@ -14,7 +14,7 @@ public class grafik extends Application {
 		Scene scene = new Scene(root,500,500,Color.SKYBLUE);
 		primaryStage.setScene(scene);
 		primaryStage.show();
-		root.getChildren().add(flagmaker.greece());
+		root.getChildren().add(flagmaker.benim(200, 300));
 		
 	}
 	

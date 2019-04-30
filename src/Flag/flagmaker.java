@@ -463,6 +463,14 @@ public class flagmaker {
 		
 	}
 	
-	
+	public static Flag sAfrika() {
+		Flag flag = new Flag();
+		
+		
+		
+		flag.getChildren().addAll();
+		
+		return flag;
+	}
 
 }
