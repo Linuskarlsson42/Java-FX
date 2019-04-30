@@ -33,7 +33,7 @@ public class former extends Application {
 		rectangle.setFill(Color.BLUEVIOLET);
 		rectangle.setTranslateX(450);
 		rectangle.setTranslateY(400);
-a
+
 		Polygon polygon = new Polygon(0, 0, 0, 100, 100, 100);
 
 		// polygon.getPoints().add(0.0);//X
