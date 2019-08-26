@@ -348,156 +348,279 @@ public class flagmaker {
 
 		return flag;
 	}
-	
+
 	public static Flag benim() {
 		Flag flag = new Flag();
-		
+
 		Rectangle green = new Rectangle();
 		green.setWidth(100);
 		green.setHeight(200);
 		green.setFill(Color.GREEN);
-		
+
 		Rectangle red = new Rectangle();
 		red.setWidth(200);
 		red.setHeight(100);
 		red.setFill(Color.RED);
 		red.setTranslateY(100);
 		red.setTranslateX(100);
-		
+
 		Rectangle yellow = new Rectangle();
 		yellow.setWidth(200);
 		yellow.setHeight(100);
 		yellow.setFill(Color.YELLOW);
 		yellow.setTranslateX(100);
-		
+
 		flag.getChildren().addAll(red, yellow, green);
-		
+
 		return flag;
 	}
-	
+
 	public static Flag cuba() {
 		Flag flag = new Flag();
-		
+
 		Rectangle bg = new Rectangle();
 		bg.setWidth(300);
 		bg.setHeight(200);
 		bg.setFill(Color.DARKBLUE);
-		
+
 		Rectangle sW = new Rectangle();
 		sW.setWidth(300);
 		sW.setHeight(40);
 		sW.setFill(Color.WHITE);
 		sW.setTranslateY(40);
-		
+
 		Rectangle sW2 = new Rectangle();
 		sW2.setWidth(300);
 		sW2.setHeight(40);
 		sW2.setFill(Color.WHITE);
 		sW2.setTranslateY(120);
-		
+
 		Polygon rP = new Polygon(0, 0, 0, 200, 0, 200, 150, 100);
 		rP.setFill(Color.RED);
-		
+
 		Star s = new Star(40);
 		s.setTranslateX(50);
 		s.setTranslateY(100);
 		s.setFill(Color.WHITE);
-		
+
 		flag.getChildren().addAll(bg, sW, sW2, rP, s);
-		
+
 		return flag;
 	}
-	
+
 	public static Flag greece() {
 		Flag flag = new Flag();
-		
+
 		Rectangle bg = new Rectangle();
 		bg.setWidth(300);
 		bg.setHeight(200);
 		bg.setFill(Color.BLUE);
-		
+
 		Rectangle vS1 = new Rectangle();
 		vS1.setWidth(300);
 		vS1.setHeight(22);
 		vS1.setTranslateY(22);
 		vS1.setFill(Color.WHITE);
-		
+
 		Rectangle vS2 = new Rectangle();
 		vS2.setWidth(300);
 		vS2.setHeight(22);
 		vS2.setTranslateY(66);
 		vS2.setFill(Color.WHITE);
-		
+
 		Rectangle vS3 = new Rectangle();
 		vS3.setWidth(300);
 		vS3.setHeight(22);
 		vS3.setTranslateY(110);
 		vS3.setFill(Color.WHITE);
-		
+
 		Rectangle vS4 = new Rectangle();
 		vS4.setWidth(300);
 		vS4.setHeight(22);
 		vS4.setTranslateY(154);
 		vS4.setFill(Color.WHITE);
-		
+
 		Rectangle sq = new Rectangle();
 		sq.setWidth(110);
 		sq.setHeight(110);
 		sq.setFill(Color.BLUE);
-		
+
 		Rectangle sqcV = new Rectangle();
 		sqcV.setWidth(20);
 		sqcV.setHeight(110);
 		sqcV.setFill(Color.WHITE);
 		sqcV.setTranslateX(44);
-		
+
 		Rectangle sqcH = new Rectangle();
 		sqcH.setWidth(110);
 		sqcH.setHeight(20);
 		sqcH.setFill(Color.WHITE);
 		sqcH.setTranslateY(44);
-		
+
 		flag.getChildren().addAll(bg, vS1, vS2, vS3, vS4, sq, sqcV, sqcH);
-		
+
 		return flag;
-		
+
 	}
-	
+
 	public static Flag sAfrika() {
 		Flag flag = new Flag();
-		
+
 		Rectangle bg = new Rectangle();
 		bg.setWidth(300);
 		bg.setHeight(200);
 		bg.setFill(Color.GREEN);
-		
+
 		Polygon bt = new Polygon(0, 40, 100, 100, 0, 160);
-		
-		
+
 		Polygon ys = new Polygon(0, 25, 0, 40, 100, 100, 100, 100, 115, 100, 0, 30);
 		ys.setFill(Color.YELLOW);
-		
+
 		Polygon ys2 = new Polygon(0, 25, 0, 40, 100, 100, 100, 100, 115, 100, 0, 30);
 		ys2.setFill(Color.YELLOW);
 		ys2.setRotate(180);
 		ys2.setTranslateY(75);
 		ys2.setNodeOrientation(NodeOrientation.RIGHT_TO_LEFT);
-		
-		Polygon ws1 = new Polygon(33, 0, 48, 0, 150, 80, 165, 80, 0, 33);
-		
-		
-		Polygon ws2 = new Polygon();
-		
-		
-		Polygon ws3 = new Polygon();
-		
-		
-		Polygon ws4 = new Polygon();
-		
-		
-		flag.getChildren().addAll(bg, bt, ys, ys2, ws1);
-		
+
+		Polygon ws1 = new Polygon(33, 0, 48, 0, 150, 60, 150, 70, 33, 0);
+		ws1.setFill(Color.WHITE);
+
+		Polygon ws2 = new Polygon(150, 70, 150, 60, 300, 60, 300, 70, 150, 70);
+		ws2.setFill(Color.WHITE);
+
+		Polygon ws3 = new Polygon(33, 0, 48, 0, 150, 60, 150, 70, 33, 0);
+		ws3.setFill(Color.WHITE);
+		ws3.setTranslateY(130);
+		ws3.setRotate(180);
+		ws3.setNodeOrientation(NodeOrientation.RIGHT_TO_LEFT);
+
+		Polygon ws4 = new Polygon(150, 70, 150, 60, 300, 60, 300, 70, 150, 70);
+		ws4.setFill(Color.WHITE);
+		ws4.setTranslateY(70);
+
+		Polygon b = new Polygon(300, 60, 300, 0, 48, 0, 150, 60, 300, 60);
+		b.setFill(Color.BLUE);
+		b.setNodeOrientation(NodeOrientation.RIGHT_TO_LEFT);
+		b.setTranslateY(140);
+		b.setRotate(180);
+
+		Polygon r = new Polygon(300, 60, 300, 0, 48, 0, 150, 60, 300, 60);
+		r.setFill(Color.RED);
+
+		flag.getChildren().addAll(bg, bt, ys, ys2, ws1, ws2, ws3, ws4, b, r);
+
 		return flag;
 	}
 
+	public static Flag macadonia() {
+		Flag flag = new Flag();
+
+		Rectangle bg = new Rectangle();
+		bg.setWidth(300);
+		bg.setHeight(200);
+		bg.setFill(Color.RED);
+
+		Circle mit = new Circle();
+		mit.setRadius(30);
+		mit.setTranslateX(150);
+		mit.setTranslateY(100);
+		mit.setFill(Color.GOLDENROD);
+
+		Polygon m1 = new Polygon(135, 200, 165, 200, 155, 133, 145, 133);
+		m1.setFill(Color.GOLDENROD);
+		
+		Polygon d1 = new Polygon(0, 200, 40, 200, 130, 125, 125, 120);
+		d1.setFill(Color.GOLDENROD);
+		
+		Polygon v1 = new Polygon(0, 120, 0, 80, 119, 95, 119, 105);
+		v1.setFill(Color.GOLDENROD);
+		
+		Polygon m2 = new Polygon(135, 200, 165, 200, 155, 133, 145, 133);
+		m2.setFill(Color.GOLDENROD);
+		m2.setNodeOrientation(NodeOrientation.RIGHT_TO_LEFT);
+		m2.setRotate(180);
+		m2.setTranslateY(-133);
+		
+		Polygon d2 = new Polygon(0, 200, 40, 200, 130, 125, 125, 120);
+		d2.setFill(Color.GOLDENROD);
+		d2.setTranslateY(-120);
+		d2.setNodeOrientation(NodeOrientation.RIGHT_TO_LEFT);
+		d2.setRotate(180);
+		
+		Polygon v2 = new Polygon(0, 120, 0, 80, 119, 95, 119, 105);
+		v2.setFill(Color.GOLDENROD);
+		v2.setRotate(180);
+		v2.setTranslateX(181);
+		
+		Polygon d3 = new Polygon(0, 200, 40, 200, 130, 125, 125, 120);
+		d3.setFill(Color.GOLDENROD);
+		d3.setTranslateY(-120);
+		d3.setTranslateX(171);
+		d3.setRotate(180);
+		
+		
+		
+		
+		Polygon d4 = new Polygon(0, 200, 40, 200, 130, 125, 125, 120);
+		d4.setFill(Color.GOLDENROD);
+		d4.setNodeOrientation(NodeOrientation.RIGHT_TO_LEFT);
+		d4.setTranslateX(171);
+		
+		
+		
+		flag.getChildren().addAll(bg, mit, m1, d1, v1, m2, d2, v2, d3, d4);
+
+		return flag;
+	}
+
+	public static Flag frankrike() {
+		Flag flag = new Flag();
+		Rectangle bg = new Rectangle();
+		bg.setWidth(300);
+		bg.setHeight(200);
+		bg.setFill(Color.WHITE);
+		
+		Rectangle b = new Rectangle();
+		b.setWidth(100);
+		b.setHeight(200);
+		b.setFill(Color.BLUE);
+		
+		Rectangle r= new Rectangle();
+		r.setWidth(100);
+		r.setHeight(200);
+		r.setFill(Color.RED);
+		r.setTranslateX(200);
+		
+		flag.getChildren().addAll(bg, b, r);
+		
+		return flag;
+		
+	}
+	
+	public static Flag mars() {
+		Flag flag = new Flag();
+
+		Rectangle red = new Rectangle();
+		red.setWidth(100);
+		red.setHeight(200);
+		red.setFill(Color.rgb(183, 40, 26));
+
+		Rectangle green = new Rectangle();
+		green.setWidth(100);
+		green.setHeight(200);
+		green.setTranslateX(100);
+		green.setFill(Color.rgb(48, 106, 55));
+
+		Rectangle blue = new Rectangle();
+		blue.setWidth(100);
+		blue.setHeight(200);
+		blue.setTranslateX(200);
+		blue.setFill(Color.rgb(27, 63, 125));
+
+		flag.getChildren().addAll(red, green, blue);
+
+		return flag;
+
+	}
+	
 }
